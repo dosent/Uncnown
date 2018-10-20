@@ -11,6 +11,7 @@
         <module>downloader</module>
         <module>imports</module>
         <module>eureka</module>
+        <module>zuul</module>
     </modules>
     <packaging>pom</packaging>
 
