@@ -5,6 +5,8 @@ cache:
   directories:
   - $HOME/.m2
 
+scripts: ./mvnw -DskipTests=true -Dmaven.javadoc.skip=true  -B -V
+
 notifications:
   email:
     recipients:
