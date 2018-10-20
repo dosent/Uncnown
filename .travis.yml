@@ -5,7 +5,10 @@ cache:
   directories:
   - $HOME/.m2
 
-scripts: ./mvnw -DskipTests=true -Dmaven.javadoc.skip=true  -B -V
+scripts: mvn install -DskipTests=true -Dmaven.javadoc.skip=true  -B -V
+
+services:
+  - postgresql
 
 notifications:
   email:
