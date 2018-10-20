@@ -10,6 +10,7 @@
     <modules>
         <module>downloader</module>
         <module>imports</module>
+        <module>eureka</module>
     </modules>
     <packaging>pom</packaging>
 
