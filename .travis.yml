@@ -10,6 +10,10 @@ script: mvn clean install
 
 services:
   - postgresql
+addons:
+  postgresql: "9.4"
+
+before_script: - psql -c 'create database fias;' -U postgres
 
 notifications:
   email:
