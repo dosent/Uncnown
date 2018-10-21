@@ -14,7 +14,7 @@ script: mvn clean install
 deploy:
   provider: releases
   api_key:
-    secure: fd68eb9f645c025fa661c0e7062d3da01a0c6383
+    secure: f5cf03b8b1fadeaef3b72ad7c165fe75d48b5226
 notifications:
   email:
     recipients:
