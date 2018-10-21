@@ -1,3 +1,7 @@
+services: postgresql
+
+before_script: psql -c 'create database fias;' -U postgres
+
 language: java
 jdk: oraclejdk8
 
@@ -7,11 +11,6 @@ cache:
 
 install: true
 script: mvn clean install
-
-services:
-  - postgresql
-
-before_script: - psql -c 'create database fias;' -U postgres
 
 notifications:
   email:
